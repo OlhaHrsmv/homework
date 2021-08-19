@@ -1,0 +1,42 @@
+# Task 1
+name = input('What is the input string? ')
+if name:
+    print("The count is", len(name))
+loop = False
+print("Please insert something")
+
+# Task 2
+num1 = input('What is the first number?')
+num2 = input('What is the second number?')
+print({num1} + {num2})
+print({num1} - {num2})
+print({num1} / {num2})
+print({num1} ** {num2})
+
+#Task3
+people_count = input('How many people?')
+pizza_amount = input('How many pizzas do you have?')
+if pizza_amount: str = input('How many pizzas do you have?')
+
+#Task4
+class RealTimeCurrencyConverter():
+    def __init__(self, url):
+        self.data = requests.get(url).json()
+        self.currencies = self.data['rates']
+    def convert(self, from_currency, to_currency, amount):
+        initial_amount = amount
+        if from_currency != 'USD':
+            amount = amount / self.currencies[from_currency]
+        amount = round(amount * self.currencies[to_currency], 4)
+        return amount
+
+#Task5
+import random
+x = ['variant1', 'variant2']
+variant1 = 'Heads'
+variant2 = 'Tails'
+print random.choice(x)
+if x == variant1
+    print('You won!')
+else:
+    print('You lose!')
