@@ -1,3 +1,24 @@
 #Task_1
 print(sum(1 for x in input() if x in 'aeiouy'))
 
+
+Task 2
+enter_string = input()
+print(enter_string.swapcase())
+
+
+Task 3
+url = input('Submit URL please: ')
+url_1 = 'https:'
+if url_1 in url:
+    print(url[8:url.find('.')])
+    
+    
+Task 4
+str = input('Please submit a string: ')
+for char in str:
+    if char.isupper():
+        print(char)
+        
+        
+Task 5
